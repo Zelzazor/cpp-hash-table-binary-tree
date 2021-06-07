@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+#include "HashTable.h"
 #include "BinaryTree.h"
 #include "Node.h"
 using namespace std;
@@ -26,6 +27,24 @@ int main()
     tree.printInorder();
     cout << endl;
 
-    
+    HashTable hash;
+
+    hash.AddItem("Samuel", "Coca cola");
+    hash.AddItem("Emily", "Juguito");
+    hash.AddItem("Juan", "Sprite");
+    hash.AddItem("Felipe", "Seven Up");
+    hash.AddItem("Carlos", "Romo");
+    hash.AddItem("Sabrina", "Gatdrink");
+    hash.AddItem("Salina", "Chuchita");
+    hash.AddItem("Corto", "Zapatero");
+
+    hash.RemoveItem("Corto");
+
+    cout << endl
+         << hash.GetValue("Samuel");
+    cout << endl
+         << hash.GetValue("Felipe");
+    cout << endl
+         << hash.GetValue("Corto");
     return 0;
 }
