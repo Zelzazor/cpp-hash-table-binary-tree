@@ -22,8 +22,6 @@ int main()
 
     Node *nodo = tree.getRoot();
 
-    
-
     cout << nodo->key << endl;
 
     tree.printInorder();
@@ -42,8 +40,11 @@ int main()
 
     hash.RemoveItem("Corto");
 
-    cout << endl << hash.GetValue("Samuel");
-    cout << endl << hash.GetValue("Felipe");
-    cout << endl << hash.GetValue("Corto");
+    cout << endl
+         << hash.GetValue("Samuel");
+    cout << endl
+         << hash.GetValue("Felipe");
+    cout << endl
+         << hash.GetValue("Corto");
     return 0;
 }
